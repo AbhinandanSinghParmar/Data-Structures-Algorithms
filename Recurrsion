@@ -1,14 +1,6 @@
 import java.util.*;
 
 public class Recurrsion {
-  public static int revnumbers(int n) {
-    if (n == 0) {
-      return -1;
-    } else {
-      System.out.print(n + ",");
-      return (revnumbers(n - 1));
-    }
-  }
 
   public static int numbers(int val, int n) {
     if (val > n) {
@@ -16,6 +8,14 @@ public class Recurrsion {
     } else {
       System.out.print(val +" ");
       return (numbers(val + 1, n));
+    }
+  }
+ public static int revnumbers(int n) {
+    if (n == 0) {
+      return -1;
+    } else {
+      System.out.print(n + ",");
+      return (revnumbers(n - 1));
     }
   }
 
